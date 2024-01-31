@@ -1,0 +1,23 @@
+GET http://localhost:5000/products
+
+###
+GET http://localhost:5000/products/34da1fda-3f6e-4004-98ca-d255272f9910
+
+###
+POST http://localhost:5000/products
+Content-Type: application/json
+
+{
+    "name": "mouse",
+    "price": 10000
+}
+###
+PATCH http://localhost:5000/products/0338a636-80af-48f9-8b32-f64e14291cea
+Content-Type: application/json
+
+{
+    "name": "mouse update",
+    "price": 10000
+}
+###
+DELETE http://localhost:5000/products/0338a636-80af-48f9-8b32-f64e14291cea
